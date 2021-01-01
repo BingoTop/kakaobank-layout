@@ -11,7 +11,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
-
     <TextView
         android:id="@+id/name_text"
         android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
         android:background="@drawable/banner_background"
@@ -172,12 +170,23 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_margin="10dp"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_info_view" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/screen_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="화면 편집"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -190,8 +199,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <TextView
@@ -209,9 +217,8 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="10dp"
-            app:srcCompat="@drawable/banner_kakao"
-            />
-            />
+            app:srcCompat="@drawable/banner_kakao" />
+        />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
