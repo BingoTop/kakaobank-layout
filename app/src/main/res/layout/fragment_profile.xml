@@ -50,9 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="mini" />
-
         </com.google.android.material.tabs.TabLayout>
-
         <TextView
             android:paddingStart="10dp"
             android:id="@+id/editTextTextPersonName"
@@ -64,16 +62,14 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="15dp"
             />
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_margin="10dp"
         android:id="@+id/ad_card1"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#3C733F"
+        android:background="@drawable/adcard_green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,11 +83,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="4dp"
             android:text="카카오뱅크 삼성카드"
+            android:textColor="#ffff"
             android:textSize="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
+            android:textColor="#ffff"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,21 +96,26 @@
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="@+id/card_first_title"
             app:layout_constraintTop_toBottomOf="@+id/card_first_title" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="125dp"
+            android:src="@drawable/ryan_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ad_card2"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:background="#EAB208"
+        android:background="@drawable/adcard_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ad_card1">
-
         <TextView
-
             android:id="@+id/card_first_title2"
             android:layout_width="104dp"
             android:layout_height="wrap_content"
@@ -123,7 +125,6 @@
             android:textSize="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="139dp"
@@ -133,41 +134,36 @@
             app:layout_constraintStart_toStartOf="@+id/card_first_title2"
             app:layout_constraintTop_toBottomOf="@+id/card_first_title2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
         <TextView
             android:id="@+id/list_title1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:text="예금 적금"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ad_card2" />
-
         <ListView
             android:id="@+id/Deposit_list"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="500dp"
             android:layout_margin="10dp"
             app:layout_constraintTop_toBottomOf="@+id/list_title1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-
         </ListView>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ad_card3"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:background="#8659D8"
+            android:background="@drawable/adcard_purple"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Deposit_list">
-
             <TextView
                 android:id="@+id/card_first_title3"
                 android:layout_width="104dp"
@@ -176,19 +172,18 @@
                 android:layout_marginTop="16dp"
                 android:text="26주 적금"
                 android:textSize="12dp"
+                android:textColor="#ffff"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="단돈 천원부터 시작하는 습관"
-                android:textSize="20dp"
+                android:textSize="17dp"
+                android:textColor="#ffff"
                 app:layout_constraintStart_toStartOf="@+id/card_first_title3"
                 app:layout_constraintTop_toBottomOf="@+id/card_first_title3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

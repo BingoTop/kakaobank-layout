@@ -3,29 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
     <TextView
-        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:textSize="18dp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
+        android:text="타이틀"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
+        android:paddingBottom="15dp"
+        android:layout_marginTop="7dp"
         android:id="@+id/text_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="설명"
         app:layout_constraintStart_toStartOf="@+id/text_title"
         app:layout_constraintTop_toBottomOf="@+id/text_title" />
-
     <TextView
+        android:layout_marginRight="15dp"
         android:id="@+id/text_rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="연 ~~"
+        android:textStyle="bold"
+        android:textColor="#289C2C"
         app:layout_constraintBottom_toBottomOf="@+id/text_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

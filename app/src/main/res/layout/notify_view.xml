@@ -9,11 +9,12 @@
     <ImageView
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:id="@+id/notify_image"
-        android:layout_width="wrap_content"
+        android:layout_width="25dp"
         android:layout_height="wrap_content"
         />
+
     <LinearLayout
         android:layout_marginStart="10dp"
         android:id="@+id/notify_info"
@@ -38,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:baselineAligned="false"
-            android:textSize="10dp"
+            android:textSize="13dp"
             />
 
         <TextView
@@ -48,9 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:textSize="8dp"
+            android:textSize="10dp"
             />
-
         <Button
             android:id="@+id/button3"
             android:layout_width="75dp"
@@ -61,11 +61,12 @@
     </LinearLayout>
     <ImageButton
         android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
         android:id="@+id/button5"
         android:layout_width="25dp"
         android:layout_height="wrap_content"
         android:background="#ffff"
-        android:src="@drawable/baseline_chevron_right_black_18dp"
+        android:src="@drawable/ic_outline_chevron_right_24"
         app:layout_constraintBottom_toBottomOf="@+id/notify_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/notify_info" />

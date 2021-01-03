@@ -3,22 +3,22 @@
     <item
         android:title="홈"
         android:id="@+id/menu_home"
-        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:icon="@drawable/home_selector"
         />
     <item
         android:title="메뉴"
         android:id="@+id/second_menu"
-        android:icon="@drawable/ic_baseline_view_comfy_24"
+        android:icon="@drawable/second_menu"
         />
     <item
         android:title="세번째 메뉴"
         android:id="@+id/third_menu"
-        android:icon="@drawable/ic_baseline_notifications_24"
+        android:icon="@drawable/third_menu"
         />
     <item
         android:title="네번째 메뉴"
         android:id="@+id/other_menu"
-        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:icon="@drawable/fourth_menu"
         />
 
 </menu>

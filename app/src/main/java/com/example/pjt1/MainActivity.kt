@@ -3,12 +3,8 @@ package com.example.pjt1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
-import android.widget.ArrayAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 class MainActivity : AppCompatActivity(){
 
@@ -16,6 +12,7 @@ class MainActivity : AppCompatActivity(){
     private lateinit var homeFragment: HomeFragment
     private lateinit var rankingFragment: RankingFragment
     private lateinit var profileFragment: ProfileFragment
+    private lateinit var settingFragment: SettingFragment
 //    private var profileFragment: ProfileFragment? =null
 
 
@@ -53,9 +50,10 @@ class MainActivity : AppCompatActivity(){
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame,rankingFragment).commit()
             }
             R.id.other_menu ->{
-                Log.d(TAG,"MainActivity -랭킹 버튼 클릭")
+                Log.d(TAG,"MainActivity -설정 버튼 클릭")
+                settingFragment = SettingFragment.newInstance()
+                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame,settingFragment).commit()
             }
-
         }
         true
 

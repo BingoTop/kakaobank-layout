@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="정재원"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/name_text"
+        app:layout_constraintStart_toEndOf="@+id/name_text"
+        app:layout_constraintTop_toTopOf="@+id/name_text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/banner_background"
+        android:text="앱설정"
+        app:layout_constraintBottom_toBottomOf="@+id/name_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_text_card"
+        android:background="@drawable/banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="NOW!"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제휴 신용카드 1월 이용 이벤트!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="#EAE0E0"
+            android:src="@drawable/ic_outline_chevron_right_24"
+            style="?android:attr/borderlessButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/button_list"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_text_card">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:src="@drawable/ic_outline_tag_faces_24" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고객센터" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:src="@drawable/ic_outline_lock_24" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageButtonText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증/보안" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:src="@drawable/ic_outline_volume_mute_24" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageButtonText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공지사항" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:src="@drawable/ic_outline_card_giftcard_24" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageButtonText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="이벤트"
+                app:layout_constraintLeft_toRightOf="@+id/imageButtonText3"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_list"
+        android:background="#474242"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        />
+
+    <TextView
+        android:id="@+id/my_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="내 계좌"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintLeft_toRightOf="@+id/my_info"
+        app:layout_constraintTop_toTopOf="@+id/my_info" />
+    <TextView
+        android:id="@+id/my_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="내 신용정보"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/baseline_chevron_right_black_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info2"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info2" />
+
+    <TextView
+        android:id="@+id/my_info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="연말정산 가이드"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info2" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info3"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info3" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/my_info3"
+        android:background="#474242"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        />
+
+    <TextView
+        android:id="@+id/transfer_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="이체/출금"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info2"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info2"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <TextView
+        android:id="@+id/my_info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="이체"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_withdraw" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info4"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info4" />
+
+    <TextView
+        android:id="@+id/my_info5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="다건이체"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info4" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info5"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info5" />
+    <TextView
+        android:id="@+id/my_info6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="자동이체"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info5" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info6"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info6" />
+    <TextView
+        android:id="@+id/my_info7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="이체내역 조회"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info6" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info7"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info7" />
+    <TextView
+        android:id="@+id/my_info8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="ATM 스마트출금"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_info7" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:src="@drawable/ic_outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/my_info8"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/my_info8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
