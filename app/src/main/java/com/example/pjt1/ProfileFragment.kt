@@ -47,9 +47,9 @@ class ProfileFragment : Fragment() {
         items.add(ListViewitem("저금통","매일매일 조금씩 쌓여요","연 2.00%"))
         items.add(ListViewitem("정기예금","실시간 이자가 쌓여요","연 1.00%"))
         items.add(ListViewitem("자유적금","매일/매주/매월/26주 자유롭게","연 1.30%"))
-
         val view = inflater.inflate(R.layout.fragment_profile,container,false)
         val deposit_list:ListView = view.findViewById(R.id.Deposit_list)
+        deposit_list.height
         deposit_list.adapter = ListViewAdapter(items)
         return view
     }

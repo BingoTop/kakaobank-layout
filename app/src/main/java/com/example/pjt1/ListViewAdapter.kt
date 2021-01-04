@@ -24,7 +24,6 @@ class ListViewAdapter(private val items: MutableList<ListViewitem>):BaseAdapter(
         text_title.text = item.title
         text_subtitle.text = item.subTitle
         text_rate.text = item.rate
-
         return convertView
     }
 }
